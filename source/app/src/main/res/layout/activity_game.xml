@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutGameScreen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameActivity">
+
+    <ScrollView
+        android:id="@+id/scrollV"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <HorizontalScrollView
+            android:id="@+id/scrollH"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <com.jungu.zootycoon.BackgroundView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/layoutGameMap"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </FrameLayout>
+
+        </HorizontalScrollView>
+    </ScrollView>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideInterface"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="60dp" />
+
+    <HorizontalScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha="0.7"
+        android:background="@color/colorInterface"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideInterface">
+
+        <LinearLayout
+            android:id="@+id/layoutInterface"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imagePenguin"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/anime_penguin" />
+
+            <ImageView
+                android:id="@+id/imageCrocodile"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/anime_crocodile" />
+
+            <ImageView
+                android:id="@+id/imageDeer"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/anime_deer" />
+
+            <ImageView
+                android:id="@+id/imageFox"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/anime_fox" />
+
+            <ImageView
+                android:id="@+id/imageKoala"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/anime_koala" />
+
+            <ImageView
+                android:id="@+id/imageSquirrel"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/anime_squirrel" />
+
+            <ImageView
+                android:id="@+id/imageTurtle"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/anime_turtle" />
+
+            <ImageView
+                android:id="@+id/zookeeper1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/zookeeper1" />
+
+            <ImageView
+                android:id="@+id/zookeeper2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/zookeeper2" />
+
+            <ImageView
+                android:id="@+id/zookeeper3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/zookeeper3" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</android.support.constraint.ConstraintLayout>

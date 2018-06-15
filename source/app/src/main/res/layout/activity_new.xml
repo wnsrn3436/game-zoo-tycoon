@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewActivity">
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/main"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideHOption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="30dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideVOption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="40dp" />
+
+    <Switch
+        android:id="@+id/switchMoneyInfinite"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:checked="false"
+        android:enabled="false"
+        android:switchMinWidth="130dp"
+        android:switchPadding="10dp"
+        android:text="@string/new_money_infinite"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/guideVOption"
+        app:layout_constraintTop_toBottomOf="@+id/guideHOption" />
+
+    <Switch
+        android:id="@+id/switchVisitorFeeling"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:checked="false"
+        android:enabled="false"
+        android:switchMinWidth="130dp"
+        android:switchPadding="10dp"
+        android:text="@string/new_visitor_feeling"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/guideVOption"
+        app:layout_constraintTop_toBottomOf="@+id/switchMoneyInfinite" />
+
+    <Switch
+        android:id="@+id/switchZookeeperExists"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:checked="true"
+        android:switchMinWidth="130dp"
+        android:switchPadding="10dp"
+        android:text="@string/new_zookeeper_exists"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/guideVOption"
+        app:layout_constraintTop_toBottomOf="@+id/switchVisitorFeeling" />
+
+    <TextView
+        android:id="@+id/textGameSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:text="@string/new_game_speed"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/guideVOption"
+        app:layout_constraintTop_toBottomOf="@+id/switchZookeeperExists" />
+
+    <RatingBar
+        android:id="@+id/ratingGameSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:numStars="3"
+        android:rating="3"
+        android:stepSize="1"
+        app:layout_constraintLeft_toRightOf="@+id/textGameSpeed"
+        app:layout_constraintTop_toBottomOf="@+id/switchZookeeperExists" />
+
+    <ImageView
+        android:id="@+id/mapPreview"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:src="@drawable/grass_texture"
+        app:layout_constraintLeft_toRightOf="@+id/ratingGameSpeed"
+        app:layout_constraintTop_toBottomOf="@+id/guideHOption" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="300dp" />
+
+    <Button
+        android:id="@+id/buttonNewGame"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:backgroundTint="@color/colorButton"
+        android:text="@string/new_new_game"
+        android:textColor="@color/colorButtonText"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideButton" />
+
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/colorButton"
+        android:text="@string/new_back"
+        android:textColor="@color/colorButtonText"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonNewGame" />
+
+</android.support.constraint.ConstraintLayout>

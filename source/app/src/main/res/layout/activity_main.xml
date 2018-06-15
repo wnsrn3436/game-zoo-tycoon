@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/main"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="100dp" />
+
+    <Button
+        android:id="@+id/buttonNew"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:backgroundTint="@color/colorButton"
+        android:text="@string/main_new"
+        android:textColor="@color/colorButtonText"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideButton" />
+
+    <Button
+        android:id="@+id/buttonContinue"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/colorButton"
+        android:text="@string/main_continue"
+        android:textColor="@color/colorButtonText"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonNew" />
+
+    <Button
+        android:id="@+id/buttonHelp"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorButtonYellow"
+        android:text="@string/main_help"
+        android:textColor="@color/colorButtonText"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">ZooTycoon</string>
+    <string name="loading_loading">로딩중입니다.</string>
+    <string name="loading_completed">계속하려면 화면을 터치하세요.</string>
+    <string name="main_new">새로 만들기</string>
+    <string name="main_continue">불러오기</string>
+    <string name="main_help">도움말</string>
+    <string name="new_money_infinite">제한된 자본</string>
+    <string name="new_visitor_feeling">관람객 기분</string>
+    <string name="new_zookeeper_exists">사육사 고용</string>
+    <string name="new_game_speed">게임 속도</string>
+    <string name="new_new_game">새로 만들기</string>
+    <string name="new_back">뒤로</string>
+    <string name="game_tooltip">하단에 있는 인터페이스의 \n동물을 꾹 눌러 동물원에 \n동물을 배치할 수 있습니다.</string>
+    <string name="game_tooltip2">배치된 동물을 꾹 눌러 \n야생으로 돌려보낼 수 있습니다.</string>
+    <string name="game_cant_hire_zookeeper">사육사를 고용할 수 없게 설정되어있습니다.</string>
+    <string name="continue_animal_count">동물의 숫자 : </string>
+    <string name="continue_continue_game">불러오기</string>
+    <string name="continue_back">뒤로</string>
+</resources>

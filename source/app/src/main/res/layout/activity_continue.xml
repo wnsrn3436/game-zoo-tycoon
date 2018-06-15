@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContinueActivity">
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/main"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/mapPreview"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/grass_texture"
+        app:layout_constraintBottom_toTopOf="@+id/guidePreview"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guidePreview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="233dp" />
+
+    <TextView
+        android:id="@+id/textMapTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="초원맵"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@+id/mapPreview"
+        app:layout_constraintRight_toRightOf="@+id/mapPreview"
+        app:layout_constraintTop_toTopOf="@+id/guidePreview" />
+
+    <TextView
+        android:id="@+id/textAnimal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/continue_animal_count"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@+id/mapPreview"
+        app:layout_constraintTop_toBottomOf="@+id/textMapTitle" />
+
+    <TextView
+        android:id="@+id/textAnimalCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:text="0마리"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/textAnimal"
+        app:layout_constraintTop_toBottomOf="@+id/textMapTitle" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="350dp" />
+
+    <Button
+        android:id="@+id/buttonContinue"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:backgroundTint="@color/colorButton"
+        android:text="@string/continue_continue_game"
+        android:textColor="@color/colorButtonText"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideButton" />
+
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/colorButton"
+        android:text="@string/continue_back"
+        android:textColor="@color/colorButtonText"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonContinue" />
+
+</android.support.constraint.ConstraintLayout>
